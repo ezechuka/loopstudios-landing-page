@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap" rel="stylesheet"> 
+  <title>Loopstudios landing page</title>
+
+</head>
+<body>
+  <header role="banner" class="header-bg pb-56 md:pb-32">
+    <nav role="navigation" class="container mx-auto px-5 pt-8 pb-44 flex flex-row justify-between items-center
+          md:px-0 md:pt-16 md:pb-32">
+      <img src="/images/logo.svg" class="w-32 md:w-36" alt="Loopstudios logo">
+      <ul class="hidden flex-row space-x-6 text-white text-sm font-bold font-alata md:flex">
+        <li>
+          <a href="#" class="md:flex md:items-center md:flex-col md:relative indicator">About</a>
+        </li>
+        <li>
+          <a href="#" class="md:flex md:items-center md:flex-col md:relative indicator">Careers</a>
+        </li>
+        <li>
+          <a href="#" class="md:flex md:items-center md:flex-col md:relative indicator">Events</a>
+        </li>
+        <li>
+          <a href="#" class="md:flex md:items-center md:flex-col md:relative indicator">Products</a>
+        </li>
+        <li>
+          <a href="#" class="md:flex md:items-center md:flex-col md:relative indicator">Support</a>
+        </li>
+      </ul>
+      
+      <button id="open-btn" class="md:hidden" aria-label="Mobile hamburger">
+        <img src="/images/icon-hamburger.svg" alt="">
+      </button>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden z-20 animate-bounce-finite absolute w-full h-full top-0 left-0 bg-black px-5 pt-8">
+      <nav role="navigation" class="container mx-auto flex flex-row justify-between items-center">
+          <img src="/images/logo.svg" class="w-32 md:w-36" alt="Loopstudios logo">
+
+          <button id="close-btn" class="md:hidden" aria-label="Mobile menu close button">
+            <img src="/images/icon-close.svg" alt="">
+          </button>
+      </nav>
+
+      <ul class="flex flex-col text-white space-y-6 justify-center h-full text-4xl font-josefinSans">
+        <li>
+          <a href="#" class="">ABOUT</a>
+        </li>
+        <li>
+          <a href="#" class="">CAREERS</a>
+        </li>
+        <li>
+          <a href="#" class="">EVENTS</a>
+        </li>
+        <li>
+          <a href="#" class="">PRODUCTS</a>
+        </li>
+        <li>
+          <a href="#" class="">SUPPORT</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="container mx-auto px-5 md:px-0">
+      <h1 class="w-full border-2 border-white text-white p-5 text-[42px] leading-[1] font-josefinSans 
+                 md:text-[64px] md:pl-10 md:py-8 md:max-w-xl">
+        IMMERSIVE EXPERIENCES THAT DELIVER
+      </h1>
+    </div>
+  </header>
+
+  <main role="main" class="container mx-auto">
+    <!-- Section one -->
+      <div class="relative flex flex-col my-24 px-5 md:my-28 md:px-0 md:flex-row md:items-center">
+        <!-- Desktop -->
+        <img src="/images/desktop/image-interactive.jpg" class="hidden w-[65%] h-[25rem] md:block" alt="">
+        
+        <!-- Mobile -->
+        <img src="/images/mobile/image-interactive.jpg" aria-hidden="true" class="w-full md:hidden" alt="">
+
+        <article class="bg-white flex flex-col justify-center items-center space-y-3
+                         md:w-1/2 md:space-y-6 md:absolute md:right-0 md:bottom-0 md:pt-16 md:pl-20">
+            <h2 class="font-josefinSans text-3xl text-center mt-10 
+                        md:mt-0 md:text-start md:text-4xl">
+              THE LEADER IN INTERACTIVE VR
+            </h2>
+
+            <p class="font-alata text-sm leading-relaxed px-8 text-center text-veryDarkGray
+                      md:text-start md:px-0">
+              Founded in 2011, Loopstudios has been producing world-class virtual reality 
+              projects for some of the best companies around the globe. Our award-winning 
+              creations have transformed businesses through digital experiences that bind 
+              to their brand.
+            </p>
+        </article>
+      </div>
+
+      <!-- Section Two -->
+      <div class="flex flex-col justify-center items-center px-5 md:px-0 md:items-start">
+          <div class="flex flex-row w-full justify-center items-center
+                      md:justify-between">
+              <h3 class="font-josefinSans text-3xl text-center 
+                  md:text-start md:text-4xl">
+                  OUR CREATIONS
+              </h3>
+
+              <button class="hidden transition-all duration-500 bg-white border-2 border-veryDarkGray hover:bg-black hover:text-white hover:border-black font-alata px-10 py-2
+                            md:block">
+                  SEE ALL
+              </button>
+          </div>
+          
+          <!-- Image creation grid -->
+          <div class="image-grid w-full grid grid-cols-1 mt-8 gap-y-6 font-josefinSans text-white
+                      md:mt-16 md:mb-32 md:grid-cols-4 md:gap-x-6">
+              <!-- CREATION 1 -->
+              <div class="creation-1 cursor-pointer group relative h-40 flex flex-row items-end p-5
+                           md:h-80">
+                  <div class="group-hover:absolute group-hover:top-0 group-hover:left-0 group-hover:w-full group-hover:h-full group-hover:bg-darkGray/70 
+                              transition-all duration-300 ease-in"></div>
+                  <h4 class="text-2xl z-20 leading-none group-hover:text-black max-w-[40px] md:max-w-[20px]">
+                      DEEP EARTH
+                  </h4>
+              </div>
+
+              <!-- CREATION 2 -->
+              <div class="creation-2 cursor-pointer group relative h-40 flex flex-row items-end p-5
+                          md:h-80">
+                    <div class="group-hover:absolute group-hover:top-0 group-hover:left-0 group-hover:w-full group-hover:h-full group-hover:bg-white/70
+                                transition-all duration-300 ease-in"></div>
+                    <h4 class="text-2xl z-20 leading-none group-hover:text-black max-w-[40px] md:max-w-[20px]">
+                        NIGHT ARCADE
+                    </h4>
+              </div>
+
+              <!-- CREATION 3 -->
+              <div class="creation-3 cursor-pointer group relative h-40 flex flex-row items-end p-5
+                          md:h-80">
+                    <div class="group-hover:absolute group-hover:top-0 group-hover:left-0 group-hover:w-full group-hover:h-full group-hover:bg-white/70
+                                transition-all duration-300 ease-in"></div>
+                    <h4 class="text-2xl z-20 leading-none group-hover:text-black max-w-[150px] md:w-[150px]">
+                        SOCCER TEAM VR
+                    </h4>
+              </div>
+
+              <!-- CREATION 4 -->
+              <div class="creation-4 cursor-pointer group relative h-40 flex flex-row items-end p-5
+                        md:h-80">
+                  <div class="group-hover:absolute group-hover:top-0 group-hover:left-0 group-hover:w-full group-hover:h-full group-hover:bg-white/70
+                              transition-all duration-300 ease-in"></div>
+                  <h4 class="text-2xl z-20 leading-none group-hover:text-black max-w-[40px] md:w-[20px]">
+                      THE GRID
+                  </h4>
+              </div>
+
+              <!-- CREATION 5 -->
+              <div class="creation-5 cursor-pointer group relative h-40 flex flex-row items-end p-5
+              md:h-80">
+                <div class="group-hover:absolute group-hover:top-0 group-hover:left-0 group-hover:w-full group-hover:h-full group-hover:bg-white/70
+                            transition-all duration-300 ease-in"></div>
+                <h4 class="text-2xl z-20 leading-none group-hover:text-black max-w-[150px] md:max-w-[150px]">
+                    FROM UP ABOVE VR
+                </h4>
+              </div>
+
+              <!-- CREATION 6 -->
+              <div class="creation-6 cursor-pointer group relative h-40 flex flex-row items-end p-5
+                        md:h-80">
+                  <div class="group-hover:absolute group-hover:top-0 group-hover:left-0 group-hover:w-full group-hover:h-full group-hover:bg-white/70
+                              transition-all duration-300 ease-in"></div>
+                  <h4 class="text-2xl z-20 leading-none group-hover:text-black max-w-[40px] md:max-w-[20px]">
+                      POCKET BOREALIS
+                  </h4>
+              </div>
+
+              <!-- CREATION 7 -->
+              <div class="creation-7 cursor-pointer group relative h-40 flex flex-row items-end p-5
+                        md:h-80">
+                  <div class="group-hover:absolute group-hover:top-0 group-hover:left-0 group-hover:w-full group-hover:h-full group-hover:bg-white/70
+                              transition-all duration-300 ease-in"></div>
+                  <h4 class="text-2xl z-20 leading-none group-hover:text-black max-w-[40px] md:w-[20px]">
+                    THE CURIOSITY
+                  </h4>
+              </div>
+
+              <!-- CREATION 8 -->
+              <div class="creation-8 cursor-pointer group relative h-40 flex flex-row items-end p-5
+                      md:h-80">
+                  <div class="group-hover:absolute group-hover:top-0 group-hover:left-0 group-hover:w-full group-hover:h-full group-hover:bg-white/70
+                              transition-all duration-300 ease-in"></div>
+                  <h4 class="text-2xl z-20 leading-none group-hover:text-black max-w-[150px] md:w-[150px]">
+                    MAKE IT FISHEYE
+                </h4>
+              </div>
+          </div>
+
+          <button class="bg-white w-full self-center text-black border-2 border-veryDarkGray 
+                            font-alata mt-8 mb-20 px-10 py-2 max-w-[150px]
+                            md:hidden">
+                  SEE ALL
+          </button>
+      </div>
+
+  </main>
+  
+  
+  <footer role="contentinfo" class="bg-black">
+      <div class="container mx-auto py-10 flex flex-col items-center
+                  md:flex-row md:justify-between">
+        <div class="flex flex-col items-center space-y-6 md:items-start">
+          <img src="/images/logo.svg" class="w-32 md:w-36" alt="Loopstudios logo">
+          
+          <ul class="flex flex-col items-center pb-12 space-y-6 text-white text-sm font-bold font-alata
+                     md:pb-0 md:space-x-8 md:space-y-0 md:flex md:flex-row">
+            <li>
+              <a href="#" class="md:flex md:items-center md:flex-col md:relative indicator">About</a>
+            </li>
+            <li>
+              <a href="#" class="md:flex md:items-center md:flex-col md:relative indicator">Careers</a>
+            </li>
+            <li>
+              <a href="#" class="md:flex md:items-center md:flex-col md:relative indicator">Events</a>
+            </li>
+            <li>
+              <a href="#" class="md:flex md:items-center md:flex-col md:relative indicator">Products</a>
+            </li>
+            <li>
+              <a href="#" class="md:flex md:items-center md:flex-col md:relative indicator">Support</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="flex flex-col space-y-6">
+          <div class="flex flex-row self-center space-x-4 md:self-end">
+            <!-- Facebook -->
+            <div class="social-icon flex flex-col items-center space-y-2">
+              <img src="/images/icon-facebook.svg" class="cursor-pointer" alt="Facebook logo">
+              <div class="w-full"></div>
+            </div>
+
+            <!-- Twitter -->
+            <div class="social-icon flex flex-col mt-0.5 items-center space-y-2">
+              <img src="/images/icon-twitter.svg" class="cursor-pointer" alt="Facebook logo">
+              <div class="w-full"></div>
+            </div>
+
+            <!-- Pinterest -->
+            <div class="social-icon flex flex-col space-y-2">
+              <img src="/images/icon-pinterest.svg" class="cursor-pointer" alt="Facebook logo">
+              <div class="w-full"></div>
+            </div>
+
+            <!-- Instagram -->
+            <div class="social-icon flex flex-col space-y-2">
+              <img src="/images/icon-instagram.svg" class="cursor-pointer" alt="Facebook logo">
+              <div class="w-full"></div>
+            </div>
+          </div>
+  
+          <p class="font-alata text-xs text-center text-darkGray">
+            © 2021 Loopstudios. All rights reserved.
+          </p>
+        </div>
+      </div>
+
+  </footer>
+
+  <script src="/main.js"></script>
+</body>
+</html>
