@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [FrontendMentor](https://www.frontendmentor.io/solutions/mobile-first-loopstudios-landing-page-X-QeUd7zkN)
+- Live Site URL: [Netlify](https://loopstudi0s-landing-page.netlify.app/)
 
 ## My process
 
